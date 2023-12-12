@@ -142,9 +142,9 @@ body  {
         display: block;
     }
 }    
-    .mujer {
+    .hombre {
         min-height: 100vh;
-        background-image: url("img/damasht.jpg"); /* Update the image path */
+        background-image: url("img/hombreht.jpg"); /* Update the image path */
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;

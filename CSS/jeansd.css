@@ -12,15 +12,23 @@ body  {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     box-sizing: border-box;
-    background-color: rgb(255, 253, 250);
+    background-color: rgb(202, 190, 190);
 }
 
 .header {
-    background-color: rgb(219, 188, 130);
+    background-color: rgb(0, 0, 0);
     color: #fff;
     padding: 27px;
     text-align: center;
     position: relative;
+}
+.header .navigation ul li a {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all .2s ease;
 }
 
 .jeans {
@@ -35,7 +43,7 @@ body  {
 .logo {
     font-size: 25px;
     text-transform: uppercase;
-    color: rgb(26, 19, 10);
+    color: rgb(255, 255, 255);
     font-weight: 700;
 }
 
@@ -58,33 +66,24 @@ body  {
 }
 
 .header .navigation ul li a:hover {
-    background-color: coral;
+    background-color: rgb(72, 70, 69);
 }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+.containe {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-around; /* Puedes ajustar esto según tus necesidades */
 }
 
-/* Move h1 above images */
-.jeans h1 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
+.colum {
+    flex: 0 0 24%; /* Puedes ajustar el porcentaje según tus necesidades */
+    margin: 5px; /* Ajusta el margen según tus preferencias */
 }
 
-/* Adjust column width for four images in a row */
-.column {
-    width: 22%; /* Adjusted width for four columns with a small space between them */
-    margin-bottom: 20px;
-}
-
-.column img {
-    width: 100%;
+.colum img {
+    width: 60%;
     height: auto;
+    border-radius: 8px; /* Puedes agregar bordes redondeados si lo deseas */
 }
 
+/* Agrega otros estilos según sea necesario */

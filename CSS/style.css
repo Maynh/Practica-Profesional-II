@@ -1,5 +1,7 @@
+/* Font import */
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,600;0,700;1,400;1,500&display=swap');
 
+/* Reset and Box Sizing */
 *,
 *::before,
 *::after {
@@ -8,145 +10,153 @@
     box-sizing: inherit;
 }
 
-body  {
+/* Body Styles */
+body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     box-sizing: border-box;
-    background-color:rgb(255, 253, 250);
+    background-color: #f4f4f4; /* Light gray background */
 }
 
-.header{
+/* Header Styles */
+.header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color:rgb(208, 167, 118);
-    padding: 0px 10%; /agrandar/
+    background-color: #070708; /* Dark blue-gray */
+    padding: 0px 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
 }
 
-.logo{
+/* Logo Styles */
+.logo {
     font-size: 25px;
     text-transform: uppercase;
-    color:black;
+    color: #ecf0f1; /* Light gray text */
     font-weight: 700;
 }
 
-.navigation ul{
-    list-style: none ;
+
+/* Navigation Styles */
+.navigation ul {
+    list-style: none;
+    display: flex;
 }
 
-.header .navigation ul li{
-    float: left;
+.header .navigation ul li {
+    
     position: relative;
+    display: inline-block;
 }
 
 .header .navigation ul li a {
     font-size: 18px;
-    color: black;
+    color: #ecf0f1; /* Light gray text */
     text-decoration: none;
     padding: 20px;
     display: block;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
 
 .header .navigation ul li a:hover {
-    background-color:coral; /cambiar color/
+    background-color: #535353; /* Highlight color on hover */
 }
 
 .header .navigation ul li ul {
     position: absolute;
     right: 0;
     width: 300px;
-    background-color:rgb(208, 167, 118);
-    display: none
+    background-color: #535353;; /* Dark blue-gray */
+    display: none;
 }
 
-.header .navigation ul li ul li a{
+.header .navigation ul li ul li a {
     font-size: 15px;
     text-transform: capitalize;
-
 }
 
-.header .navigation ul li ul li ul{
+.header .navigation ul li ul li ul {
     position: absolute;
     top: 0;
     right: 300px;
 }
 
-.header .navigation ul li ul li{
+.header .navigation ul li ul li {
     width: 100%;
 }
 
-.header .navigation ul li:hover > ul { 
+.header .navigation ul li:hover > ul {
     display: initial;
 }
+
+/* Toggle Styles */
 #toggle,
-.header label{
+.header label {
     display: none;
     cursor: pointer;
 }
 
-.menu{
+.menu {
     width: 45px;
     height: 35px;
 }
 
-@media(max-width:950px) {
+/* Media Query for Responsive Design */
+@media (max-width: 950px) {
     .header label {
         display: initial;
     }
-    .header{
+
+    .header {
         padding: 20px 10%;
     }
- 
-    .header .navigation{
+
+    .header .navigation {
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
-        background-color: rgb(208, 167, 118);
+        background-color: #050505/* Dark blue-gray */
         display: none;
     }
-    
+
     .header .navigation ul li {
         width: 100%;
     }
 
-    .header .navigation ul li a{
-        padding: 8px 30px 8px 10% ;
+    .header .navigation ul li a {
+        padding: 8px 30px 8px 10%;
     }
 
-    .header .navigation ul li ul{
-        position: relative;
-        width: 100%;
-        left: 0; 
-    }
-
-    .header .navigation ul li ul li{
-        background-color:rgb(208, 167, 118);
-
-    }
-
-    .header .navigation ul li ul li ul{
+    .header .navigation ul li ul {
         position: relative;
         width: 100%;
         left: 0;
+    }
 
+    .header .navigation ul li ul li {
+        background-color: #413f3f; /* Dark blue-gray */
+    }
+
+    .header .navigation ul li ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
     }
 
     #toggle:checked ~ .navigation {
         display: block;
     }
-}    
-    .hero {
-        min-height: 100vh;
-        background-image: url("img/hero.jpg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
+}
 
-    }
+/* Hero Section Styles */
+.hero {
+    min-height: 100vh;
+    background-image: url("img/Fondo\ de\ Pantalla\ Frase\ Motivadora\ Moderno\ Degradado\ Violeta.jpg");
+    background-position: center center;
+    background-repeat: no-repeat
+}

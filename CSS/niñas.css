@@ -142,10 +142,10 @@ body  {
         display: block;
     }
 }    
-    .mujer {
+    .niña {
         min-height: 100vh;
-        background-image: url("img/damasht.jpg"); /* Update the image path */
-        background-position: center center;
+        background-image: url("img/niñasht.jpg");
+        background-position: center center ;
         background-repeat: no-repeat;
         background-size: cover;
-     }
+    }
