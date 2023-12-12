@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,600;0,700;1,400;1,500&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body  {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: rgb(255, 253, 250);
+}
+
+.header {
+    background-color: rgb(219, 188, 130);
+    color: #fff;
+    padding: 27px;
+    text-align: center;
+    position: relative;
+}
+
+.jeans {
+    text-align: center;
+    margin-top: 46px;
+}
+
+.navigation {
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: rgb(26, 19, 10);
+    font-weight: 700;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.header .navigation ul li {
+    float: left;
+    position: relative;
+}
+
+.header .navigation ul li a {
+    font-size: 18px;
+    color: black(0, 0, 0);
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all .2s ease;
+}
+
+.header .navigation ul li a:hover {
+    background-color: coral;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Move h1 above images */
+.jeans h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Adjust column width for four images in a row */
+.column {
+    width: 22%; /* Adjusted width for four columns with a small space between them */
+    margin-bottom: 20px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+}
+
